@@ -13,7 +13,32 @@
 		9BC02D9B23B9D2DE0047FABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC02D9923B9D2DE0047FABD /* Main.storyboard */; };
 		9BC02D9D23B9D2DF0047FABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC02D9C23B9D2DF0047FABD /* Assets.xcassets */; };
 		9BC02DA023B9D2DF0047FABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC02D9E23B9D2DF0047FABD /* LaunchScreen.storyboard */; };
+		9BC02DAE23B9DA960047FABD /* Fastlane_RubyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC02DAD23B9DA960047FABD /* Fastlane_RubyUITests.swift */; };
+		9BC02DB623B9DAC10047FABD /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC02DB523B9DAC10047FABD /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BC02DB023B9DA960047FABD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BC02D8823B9D2DE0047FABD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BC02D8F23B9D2DE0047FABD;
+			remoteInfo = "Fastlane-Ruby";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9BC02DBB23B9EB390047FABD /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9BC02D9023B9D2DE0047FABD /* Fastlane-Ruby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fastlane-Ruby.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +49,22 @@
 		9BC02D9C23B9D2DF0047FABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BC02D9F23B9D2DF0047FABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BC02DA123B9D2DF0047FABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC02DAB23B9DA960047FABD /* Fastlane-RubyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fastlane-RubyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC02DAD23B9DA960047FABD /* Fastlane_RubyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fastlane_RubyUITests.swift; sourceTree = "<group>"; };
+		9BC02DAF23B9DA960047FABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC02DB523B9DAC10047FABD /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		9BC02DB823B9EB390047FABD /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = ../../../../../usr/local/Cellar/freetype/2.10.1/lib/libpng16.16.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9BC02D8D23B9D2DE0047FABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC02DA823B9DA960047FABD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				9BC02D9223B9D2DE0047FABD /* Fastlane-Ruby */,
+				9BC02DAC23B9DA960047FABD /* Fastlane-RubyUITests */,
 				9BC02D9123B9D2DE0047FABD /* Products */,
+				9BC02DB723B9EB390047FABD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				9BC02D9023B9D2DE0047FABD /* Fastlane-Ruby.app */,
+				9BC02DAB23B9DA960047FABD /* Fastlane-RubyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +107,24 @@
 			path = "Fastlane-Ruby";
 			sourceTree = "<group>";
 		};
+		9BC02DAC23B9DA960047FABD /* Fastlane-RubyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9BC02DAD23B9DA960047FABD /* Fastlane_RubyUITests.swift */,
+				9BC02DB523B9DAC10047FABD /* SnapshotHelper.swift */,
+				9BC02DAF23B9DA960047FABD /* Info.plist */,
+			);
+			path = "Fastlane-RubyUITests";
+			sourceTree = "<group>";
+		};
+		9BC02DB723B9EB390047FABD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BC02DB823B9EB390047FABD /* libpng16.16.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +135,7 @@
 				9BC02D8C23B9D2DE0047FABD /* Sources */,
 				9BC02D8D23B9D2DE0047FABD /* Frameworks */,
 				9BC02D8E23B9D2DE0047FABD /* Resources */,
+				9BC02DBB23B9EB390047FABD /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -86,6 +145,24 @@
 			productName = "Fastlane-Ruby";
 			productReference = 9BC02D9023B9D2DE0047FABD /* Fastlane-Ruby.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9BC02DAA23B9DA960047FABD /* Fastlane-RubyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BC02DB223B9DA960047FABD /* Build configuration list for PBXNativeTarget "Fastlane-RubyUITests" */;
+			buildPhases = (
+				9BC02DA723B9DA960047FABD /* Sources */,
+				9BC02DA823B9DA960047FABD /* Frameworks */,
+				9BC02DA923B9DA960047FABD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BC02DB123B9DA960047FABD /* PBXTargetDependency */,
+			);
+			name = "Fastlane-RubyUITests";
+			productName = "Fastlane-RubyUITests";
+			productReference = 9BC02DAB23B9DA960047FABD /* Fastlane-RubyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +176,10 @@
 				TargetAttributes = {
 					9BC02D8F23B9D2DE0047FABD = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					9BC02DAA23B9DA960047FABD = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 9BC02D8F23B9D2DE0047FABD;
 					};
 				};
 			};
@@ -116,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				9BC02D8F23B9D2DE0047FABD /* Fastlane-Ruby */,
+				9BC02DAA23B9DA960047FABD /* Fastlane-RubyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +210,13 @@
 				9BC02DA023B9D2DF0047FABD /* LaunchScreen.storyboard in Resources */,
 				9BC02D9D23B9D2DF0047FABD /* Assets.xcassets in Resources */,
 				9BC02D9B23B9D2DE0047FABD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC02DA923B9DA960047FABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +233,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BC02DA723B9DA960047FABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC02DAE23B9DA960047FABD /* Fastlane_RubyUITests.swift in Sources */,
+				9BC02DB623B9DAC10047FABD /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BC02DB123B9DA960047FABD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BC02D8F23B9D2DE0047FABD /* Fastlane-Ruby */;
+			targetProxy = 9BC02DB023B9DA960047FABD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9BC02D9923B9D2DE0047FABD /* Main.storyboard */ = {
@@ -285,16 +391,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 201912301156;
 				DEVELOPMENT_TEAM = W85ZZMYXUT;
 				INFOPLIST_FILE = "Fastlane-Ruby/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/freetype/2.10.1/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bulllls.Fastlane-Ruby";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -303,16 +415,60 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 201912301156;
 				DEVELOPMENT_TEAM = W85ZZMYXUT;
 				INFOPLIST_FILE = "Fastlane-Ruby/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/freetype/2.10.1/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bulllls.Fastlane-Ruby";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		9BC02DB323B9DA960047FABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W85ZZMYXUT;
+				INFOPLIST_FILE = "Fastlane-RubyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bulllls.Fastlane-RubyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fastlane-Ruby";
+			};
+			name = Debug;
+		};
+		9BC02DB423B9DA960047FABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W85ZZMYXUT;
+				INFOPLIST_FILE = "Fastlane-RubyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bulllls.Fastlane-RubyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fastlane-Ruby";
 			};
 			name = Release;
 		};
@@ -333,6 +489,15 @@
 			buildConfigurations = (
 				9BC02DA523B9D2DF0047FABD /* Debug */,
 				9BC02DA623B9D2DF0047FABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BC02DB223B9DA960047FABD /* Build configuration list for PBXNativeTarget "Fastlane-RubyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC02DB323B9DA960047FABD /* Debug */,
+				9BC02DB423B9DA960047FABD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
